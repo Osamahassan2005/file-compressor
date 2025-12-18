@@ -21,7 +21,7 @@ css_path = pathlib.Path("dsa-cep/style.css")
 load_css(css_path)
 
 current_dir = os.path.dirname(__file__)
-image_path = os.path.join(current_dir, "dsa-cep", "my_image.png")  # split path parts
+image_path = os.path.join(current_dir, "my_image.png")  # split path parts
 
 if os.path.exists(image_path):
     st.image(image_path, caption="My Image", use_column_width=True)
