@@ -1,0 +1,221 @@
+/* -------------------
+   Color Variables
+------------------- */
+:root {
+  --st-bg-dark: #0b0b0f;
+  --st-bg-light: #F8FAFC;
+
+  --st-text-light: #ffffff;
+  --st-text-dark: #1E293B;
+
+  --st-dark-red: #6b0f1a;
+  --st-blood-red: #b11226;
+  --st-neon-red: #ff2a2a;
+
+  --st-blue: #0d47a1;
+
+  --st-muted: rgba(49,51,63,0.6);
+  --st-muted-light: rgba(255,255,255,0.6);
+
+  --st-border: rgba(255,255,255,0.08);
+  --st-hover-row: rgba(255,42,42,0.06);
+
+  --st-font: "Comic Sans MS", sans-serif;
+  --radius: 10px;
+}
+
+/* -------------------
+   Theme switch
+------------------- */
+.stApp {
+  --bg: var(--st-bg-dark);
+  --text: var(--st-text-light);
+  --heading: var(--st-blood-red);
+}
+
+.stApp.light-theme {
+  --bg: var(--st-bg-light);
+  --text: var(--st-text-dark);
+  --heading: var(--st-blue);
+}
+
+/* -------------------
+   Base App
+------------------- */
+.stApp {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--st-font);
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------
+   Header
+------------------- */
+.stApp header {
+  background-color: transparent;
+  color: var(--text);
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* -------------------
+   Headings
+------------------- */
+.stApp h1 {
+  color: var(--heading);
+  font-size: 46px;
+  font-weight: 900;
+  text-shadow:
+    0 0 3px var(--st-neon-red),
+    0 0 18px rgba(177,18,38,0.6);
+}
+
+.stApp h2,
+.stApp h3,
+.stApp h4 {
+  color: var(--heading);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* -------------------
+   Markdown / Text
+------------------- */
+.st-emotion-cache-1q82h82,
+.st-emotion-cache-3uj0rx li,
+.st-emotion-cache-467cry li,
+.st-emotion-cache-9rsxm2 p,
+.st-emotion-cache-11mwrlk {
+  color: var(--text);
+}
+
+em,
+.st-emotion-cache-3uj0rx b,
+.st-emotion-cache-3uj0rx strong {
+  color: var(--text);
+}
+
+/* -------------------
+   Divider
+------------------- */
+.st-emotion-cache-467cry hr {
+  border: none;
+  border-bottom: 1px solid var(--st-border);
+  margin: 2em 0;
+}
+
+/* -------------------
+   Radio
+------------------- */
+.stRadio p {
+  color: var(--text);
+  font-family: var(--st-font);
+}
+
+/* -------------------
+   Buttons
+------------------- */
+.stApp button {
+  background-color: var(----);
+  color: #ffffff !important;
+  border: 2px solid var(--st-neon-red) !important;
+  border-radius: var(--radius) !important;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.stApp button:hover {
+  background-color: var(--st-dark-red);
+  color: #ffffff !important;
+  box-shadow:
+    0 0 6px rgba(255,42,42,0.4),
+    0 0 14px rgba(177,18,38,0.6);
+}
+
+.stApp button:active {
+  transform: scale(0.97);
+  background-color: #4a0a12;
+}
+
+/* -------------------
+   File Uploader
+------------------- */
+.st-emotion-cache-1k9kca4,
+.st-emotion-cache-15nprkh {
+  background-color: var(----);
+  color: #ffffff;
+   box-shadow:
+    0 0 6px rgba(255,42,42,0.4),
+    0 0 14px rgba(177,18,38,0.6);
+  transition: all 0.2s ease;}
+
+.st-emotion-cache-ycmcfb {
+    color: var(--heading);
+}
+.st-emotion-cache-1sct1q3 {
+    color: rgb(170, 59, 59);
+}
+.st-emotion-cache-1s2v671 {
+    color: rgb(170, 59, 59);
+   }
+
+.st-emotion-cache-1k9kca4:hover,
+.st-emotion-cache-15nprkh:hover {
+  background-color: var(--st-dark-red);
+  box-shadow:
+    0 0 6px rgba(255,42,42,0.4),
+    0 0 14px rgba(177,18,38,0.6);
+}
+.st-emotion-cache-p9nomz {
+    color: rgb(162, 70, 63);
+}
+.st-emotion-cache-1k9kca4:hover *,
+.st-emotion-cache-15nprkh:hover * {
+  color: #ffffff !important;
+}
+
+/* -------------------
+   Tables
+------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #191970;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  padding: 8px 12px;
+  color: var(--text);
+  border-bottom: 1px solid var(--st-border);
+  border-right: 1px solid var(--st-border);
+}
+
+tr:hover {
+  background-color: var(--st-hover-row);
+}
+.st-emotion-cache-1sb501b {
+   color:rgba(250, 250, 250, 0.6);
+}
+
+/* -------------------
+   Info text
+------------------- */
+.st-b4 {
+  color: rgb(21,130,55);
+}
+
+/* -------------------
+   Small screens
+------------------- */
+@media (max-width: 480px) {
+  .stApp h1 { font-size: 36px; }
+  .stApp h2 { font-size:22px;}
+}
