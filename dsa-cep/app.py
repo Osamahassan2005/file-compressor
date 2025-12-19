@@ -27,6 +27,7 @@ current_dir = os.path.dirname(__file__)
 image_path = os.path.join(current_dir, "my_image.png")  # split path parts
 
 if os.path.exists(image_path):
+    pass
     #st.image(image_path, caption="My Image", use_column_width=True)
 else:
     st.error(f"Image not found: {image_path}")
