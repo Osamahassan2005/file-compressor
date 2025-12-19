@@ -1,4 +1,4 @@
-# File Compression Utility
+# File Compression Studio 🗃
 
 A **lossless file compression tool** built as a key academic project in the third semester of my Computer Systems Engineering program. This project showcases the practical application of **Data Structures and Algorithms (DSA)** to real-world file compression and decompression.
 
@@ -36,9 +36,9 @@ git clone <your-repo-link>
 cd file-compression-utility
 
 2. Run the Streamlit app:
-
+```bash
 streamlit run app.py
-
+```
 3. Upload a file:
 
 .huff files → automatically decompressed
