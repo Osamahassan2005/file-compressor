@@ -21,7 +21,7 @@ css_path = pathlib.Path("dsa-cep/style.css")
 load_css(css_path)
 
 st.set_page_config(page_title="File Compressor", layout="centered")
-st.title("File Compressor Tool 📁")
+st.title("File Compression Studio 🗃")
 
 current_dir = os.path.dirname(__file__)
 image_path = os.path.join(current_dir, "my_image.png")  # split path parts
